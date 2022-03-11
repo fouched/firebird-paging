@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.4</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>za.co.limehouse</groupId>
 	<artifactId>firebird-paging</artifactId>
@@ -27,10 +26,15 @@
 			<version>2.2.2</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.firebirdsql.jdbc</groupId>
-		    <artifactId>jaybird-jdk18</artifactId>
-		    <!-- <version>3.0.12<version>-->
-		    <version>4.0.5.java8</version>
+			<groupId>org.firebirdsql.jdbc</groupId>
+			<artifactId>jaybird-jdk18</artifactId>
+			<!-- <version>3.0.12<version>-->
+			<version>4.0.5.java8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>3.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
