@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="za.co.limehouse.gpw.gpwapi.data.mapper.StmUserMapper">
+	
+	<select id="logon" resultType="StmUserDto" parameterType="LogonRequestModel">
+		SELECT * FROM stm_logon
+        WHERE username = #{username}
+        AND password = crypt(#{password}, password)
+        AND status = 1
+	</select>
+
+</mapper>
